@@ -3,7 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,600;1,700&display=swap");
 @font-face {
   font-family: toilsifyfont;
-  src: url(../font/Questrial-Regular.ttf);
+  src: url(../font/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: toilsifypfont;
+  src: url(../font/Roboto-Medium.ttf);
   font-weight: bold;
 }
 
@@ -53,7 +59,75 @@ p {
   font-family: hynitrfont;
 }
 
+#home {
+  background-color: #ffcf34;
+}
 
+#hometext {
+  color: #000;
+  font-family: toilsifyfont;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+#home p {
+
+font-family: toilsifypfont;
+}
+
+.up-down-animation {
+  animation: up_down 3s ease-in infinite alternate-reverse;
+}
+
+@-webkit-keyframes up_down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes up_down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+
+.left-right-animation {
+  animation: left_right 3s ease-in infinite alternate-reverse;
+}
+
+@-webkit-keyframes left_right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+@keyframes left_right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
 
 /********** RESPONSIVENESS **********/
 
@@ -65,11 +139,17 @@ p {
 /* For 640 Resolution - mobile */
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
 
+  #home p{
+    font-size: 1rem !important;
+  }
 }
 
 /* For 1024 Resolution - laptop 1 */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* STYLES GO HERE */
+  #home h1 {
+    font-size: calc(2.775rem + 1.9vw) !important;
+  }
 }
 
 /* For 1366 Resolution  -- laptop 2*/
