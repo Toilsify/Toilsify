@@ -62,7 +62,7 @@ li {
 p {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: toilsifypfont;
+  font-family: toilsifyppfont;
 }
 
 #home {
@@ -92,9 +92,9 @@ p {
   
 }
 
-#about p{
+#home p{
 
-font-family: toilsifyppfont;
+font-family: toilsifypfont;
 }
 
 
@@ -115,6 +115,13 @@ font-family: toilsifyppfont;
   
 }
 
+#features i {
+
+  background-color: #ffcf34;
+  border-radius: 50%;
+  padding: 4%;
+  font-size: 3rem;
+}
 
 .up-down-animation {
   animation: up_down 3s ease-in infinite alternate-reverse;
