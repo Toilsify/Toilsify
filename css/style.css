@@ -13,6 +13,12 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: toilsifyppfont;
+  src: url(../font/Roboto-Regular.ttf);
+  font-weight: bold;
+}
+
 *,
 *::before,
 *::after {
@@ -56,7 +62,7 @@ li {
 p {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: hynitrfont;
+  font-family: toilsifypfont;
 }
 
 #home {
@@ -71,10 +77,6 @@ p {
   display: flex;
 }
 
-#home p {
-  
-font-family: toilsifypfont;
-}
 
 #hbtn {
 
@@ -83,6 +85,29 @@ font-family: toilsifypfont;
 }
 
 #hbtn:hover{
+
+  background-color: #fff;
+  color: #000;
+  border: 2px solid grey;
+  
+}
+
+#about p{
+
+font-family: toilsifyppfont;
+}
+
+
+#abtn {
+
+  border-radius: 10px;
+  background-color: #ffcf34;
+  color: #000;
+  border: none;
+
+}
+
+#abtn:hover{
 
   background-color: #fff;
   color: #000;
