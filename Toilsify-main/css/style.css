@@ -114,10 +114,8 @@ font-family: toilsifypfont;
   border: 2px solid grey;
   
 }
-
-#features {
-
-  height: 80vh;
+#features{
+  background-color: #271e00;
 }
 
 #features i {
@@ -255,12 +253,12 @@ ul.social-footer2 li a i{
   background: rgba(196, 196, 196, 0.3);
   padding: 5px 0;
 }
-.btn{
+.reg{
   background-color: #ffd000;
   color: rgb(54, 54, 54);
   font-weight: 600;
 }
-.btn:hover, .btn:focus, .btn.active{
+.reg:hover, .reg:focus, .reg.active{
   background: #4b92dc;
   color: #fff;
   -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
