@@ -325,7 +325,7 @@ ul.social-footer2 li a i{
   color: rgb(54, 54, 54);
   font-weight: 600;
 }
-.reg:hover, .reg:focus, .reg.active{
+.reg:hover, .reg:focus, .reg.active, .sbtn:hover{
   background: #4b92dc;
   color: #fff;
   -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
