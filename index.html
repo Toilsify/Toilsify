@@ -73,11 +73,11 @@
           <!-- navbar -->
           <nav class="navbar navbar-expand-md">
             <div class="container-xxl">
-                <a href="#." class="navbar-brand">
+                <a href="#." class="navbar-brand flex-grow-1">
                   <img src="./img/toilsify.png" alt="logo" width="120px">
                     
                 </a>
-                <li class="nav-item ms-5 ps-5 d-inline d-md-none float-left shadow-none">
+                <li class="nav-item d-inline d-md-none me-2 float-left shadow-none">
                     <a  class="btn" data-bs-toggle="modal" href="#exampleModalToggle2" role="button" id="login-btn">Login</a>
                 </li>
                 <!-- toogle button for mobile nav -->
@@ -111,79 +111,87 @@
             </div>
         </nav>
 
+        <!-- sign up form -->
         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                  <form id="form" class="bg-light px-5 pb-5">
-                    <div class="modal-header">
-                      <h3 class="modal-title " id="exampleModalToggleLabel">Sign Up</h3>
-                      <button type="button" class="btn-close" style="color: black;" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-      
-                        <div class="form-group my-2">
-                            <label for="exampleInputEmail1">Full Name</label>
-                            <input type="text" class="form-control has" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Steven Curry">
-                          </div>
-                        <div class="form-group mb-2">
-                          <label for="InputEmail1">Email address</label>
-                          <input type="email" class="form-control has-validation" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        </div>
-                        <div class="form-group mb-2">
-                          <label for="InputPassword1">Password</label>
-                          <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="InputPassword1">Confirm Password</label>
-                            <input type="password" class="form-control" id="InputPassword1" placeholder="Confrim Password">
-                          </div>
-                        <button type="submit" class="btn " style="border: 1px solid #fcc100; color: #fff; padding: 6px 24px; background-color: #fcc100;">Sign up</button>
+              <form id="form" class="bg-white px-4 ">
+                <div class="modal-header">
+                  <h3 class="modal-title " id="exampleModalToggleLabel">Sign Up</h3>
+                  <button type="button" class="btn-close" style="color: black;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+  
+                <div class="modal-body">
+                  <div class="form-group my-2">
+                    <label for="exampleInputEmail1">Full Name</label>
+                    <input type="text" class="form-control has" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Steven Curry">
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="InputEmail1">Email address</label>
+                    <input type="email" class="form-control has-validation" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                  </div>
+                  <div class="form-group mb-2">
+                    <label for="InputPassword">Password</label>
+                    <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group mb-2">
+                    <label for="InputPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="InputPassword" placeholder="Confrim Password">
+                  </div>
+                  <button type="submit" class="btn " style="border: 1px solid #fcc100; color: #fff; padding: 6px 24px; background-color: #fcc100;">Sign up</button>
 
-                        <div class="social-media">
-                            <p class="text-center fw-bolder mt-2">or sign up with </p>
-                            <div class="social-icons text-center">
-                                <ul>
-                                  <li class=""><a title="twitter" href="#."  ><i class="fab fa-twitter"></i></a></li>
-                                  <li class=""><a title="facebook" href="#." ><i class="fab fa-facebook-f"></i></a></li>
-                                  <li class=""><a title="instagram" href="#."><i class="fab fa-google"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr class="text-muted text-center">
-                        <div class="my-3">
-                          <div class="text-muted">Already a user? <span><a class="fw-bold lbtn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" style="cursor: pointer;">Login</a></span></div>
-                          
-                        </div>
-                      </form>
-              
+                  <div class="social-media">
+                    <p class="text-center fw-bolder mt-2">or sign up with </p>
+                    <div class="social-icons text-center">
+                        <ul>
+                          <li class=""><a title="twitter" href="#."  ><i class="fab fa-twitter"></i></a></li>
+                          <li class=""><a title="facebook" href="#." ><i class="fab fa-facebook-f"></i></a></li>
+                          <li class=""><a title="instagram" href="#."><i class="fab fa-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="text-muted text-center">
+                <div class="my-3">
+                  <div class="text-muted">Already a user? <span><a class="fw-bold lbtn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" style="cursor: pointer;">Login</a></span></div>
+                  
+                </div>   
+                </div> 
+                </div>
+              </form>
             </div>
           </div>
         </div>
+
+        <!-- login form -->
         <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <form id="form" class="bg-light px-5 pb-5">
+              <form id="form" class="bg-white px-4 pb-5">
                 <div class="modal-header">
                   <h3 class="modal-title " id="exampleModalToggleLabel">Login</h3>
                   <button type="button" class="btn-close" style="color: black;" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
   
-                    <div class="form-group my-2">
-                      <label for="InputEmail1">Email address</label>
-                      <input type="email" class="form-control has-validation" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
-                    </div>
-                    <div class="form-group mb-2">
-                      <label for="InputPassword1">Password</label>
-                      <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
-                    </div>
-                  
-                    <button type="submit" class="btn " style="border: 1px solid #fcc100; color: #fff; padding: 6px 24px; background-color: #fcc100;">Login</button>
+                <div class="modal-body">
+                  <div class="form-group my-2">
+                    <label for="InputEmail1">Email address</label>
+                    <input type="email" class="form-control has-validation" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                  </div>
+                  <div class="form-group mb-2">
+                    <label for="InputPassword1">Password</label>
+                    <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                  </div>
+                
+                  <button type="submit" class="btn " style="border: 1px solid #fcc100; color: #fff; padding: 6px 24px; background-color: #fcc100;">Login</button>
 
-                    <hr class="text-muted text-center">
-                    <div class="my-3">
-                      <div class="text-muted">Don't have an account? <span><a class="fw-bold lbtn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" style="cursor: pointer;">Sign up</a></span></div>
-                      
-                    </div>
-                  </form>
+                  <hr class="text-muted text-center">
+                  <div class="my-3">
+                    <div class="text-muted">Don't have an account? <span><a class="fw-bold lbtn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" style="cursor: pointer;">Sign up</a></span></div>
+                    
+                  </div>
+                  
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -467,10 +475,16 @@
             
         </body>
 
-         <script src="js/jquery.min.js"></script>
-        <!--<script src="js/bootstrap.min.js"></script>
+
+         <!-- <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+         
+        <script src="js/jquery.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script> -->
+
         <script src="./assets/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/aos.js"></script>
         <script src="js/fontawesome.min.js"></script>
