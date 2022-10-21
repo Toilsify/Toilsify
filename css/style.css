@@ -274,20 +274,8 @@ font-family: toilsifypfont;
 
 /* form */
 #form {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  min-width: 500px;
   margin: 0 6px;
   border-radius: 5px;
-}
-@media (max-width: 768px) {
-  #form {
-    min-width: 80vw;
-    top: 60%;
-    
-  }
 }
 
 form .social-icons ul {
