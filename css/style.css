@@ -84,7 +84,8 @@ p {
 
 }
 
-#hbtn:hover{
+#hbtn:hover, 
+.sbtn:hover{
 
   background-color: #fff;
   color: #000;
@@ -97,6 +98,17 @@ p {
 font-family: toilsifypfont;
 }
 
+#login-btn {
+  border: 1px solid #fcc100; 
+  color: #fcc100; 
+  padding: 6px 24px;
+}
+
+#login-btn:hover {
+  background-color: #ffcf34;
+  color: #fff;
+  border: 1px solid #fcc100;
+}
 
 #abtn {
 
@@ -194,12 +206,12 @@ font-family: toilsifypfont;
 }
 .sbtn {
   align-items: center;
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(0, 0, 0, 0.85); */
   cursor: pointer;
   display: inline-flex;
   font-size: 16px;
@@ -219,23 +231,38 @@ font-family: toilsifypfont;
   width: auto;
 }
 
-.sbtn:hover,
-.sbtn:focus {
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: rgba(0, 0, 0, 0.65);
-}
-
 .sbtn:hover {
   transform: translateY(-1px);
 }
 
+.navs {
+  color: #000;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+.navs:hover{
+  color: #eee;
+  background-color: #000;
+}
+.nav-btn {
+  outline: none;
+  border: 0;
+}
+
 .sbtn:active {
-  background-color: #F0F0F1;
+  background-color: #ffffff;
   border-color: rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
+}
+/* .lbnt:{
+
+} */
+
+#login-btn:focus, 
+#sign-up-btn:focus {
+  box-shadow: none;
 }
 
 @media (min-width: 768px) {
@@ -243,6 +270,35 @@ font-family: toilsifypfont;
     margin: 8rem;
   }
   
+}
+
+/* form */
+#form {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-width: 500px;
+  margin: 0 6px;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  #form {
+    min-width: 80vw;
+    top: 60%;
+    
+  }
+}
+
+form .social-icons ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+form .social-icons ul li a {
+  font-size: 30px;
+  color: #fcc100;
 }
 
 /* footer styling */
@@ -316,7 +372,9 @@ ul.social-footer2 li a i{
   color: rgb(54, 54, 54);
   font-weight: 600;
 }
-.reg:hover, .reg:focus, .reg.active{
+.reg:hover, 
+.reg:focus, 
+.reg.active {
   background: #4b92dc;
   color: #fff;
   -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
