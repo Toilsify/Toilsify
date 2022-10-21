@@ -70,6 +70,123 @@
     </head>
 
         <body>
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-md">
+            <div class="container-xxl">
+                <a href="#." class="navbar-brand">
+                  <img src="./img/toilsify.png" alt="logo" width="120px">
+                    
+                </a>
+                <li class="nav-item ms-5 ps-5 d-inline d-md-none float-left shadow-none">
+                    <a  class="btn" data-bs-toggle="modal" href="#exampleModalToggle2" role="button" id="login-btn">Login</a>
+                </li>
+                <!-- toogle button for mobile nav -->
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon nav-btn" ></span>
+                </button>
+    
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class=" nav-item ms-2">
+                            <a href="#about" class="navs nav-link px-3">About</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a href="#features" class="navs nav-link px-3">Features</a>
+                        </li>
+                        <li class=" nav-item ms-2">
+                            <a href="#" class="navs nav-link px-3">How to use</a>
+                        </li>
+                        <li class=" nav-item ms-2">
+                            <a href="#pricing" class="navs nav-link px-3">Why to use</a>
+                        </li>
+                        <li class="nav-item ms-2 d-none d-md-inline">
+                            <a class="btn" id="login-btn" data-bs-toggle="modal" href="#exampleModalToggle2" role="button">Login</a>
+                        </li>
+                        <li class="nav-item ms-2 d-none d-md-inline">
+                          <a data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="btn" style="border: 1px solid #fcc100; color: #fff; padding: 6px 24px; background-color: #fcc100; box-shadow: none;" id="sign-up-btn">Sign Up</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                  <form id="form" class="bg-light px-5 pb-5">
+                    <div class="modal-header">
+                      <h3 class="modal-title " id="exampleModalToggleLabel">Sign Up</h3>
+                      <button type="button" class="btn-close" style="color: black;" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+      
+                        <div class="form-group my-2">
+                            <label for="exampleInputEmail1">Full Name</label>
+                            <input type="text" class="form-control has" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Steven Curry">
+                          </div>
+                        <div class="form-group mb-2">
+                          <label for="InputEmail1">Email address</label>
+                          <input type="email" class="form-control has-validation" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group mb-2">
+                          <label for="InputPassword1">Password</label>
+                          <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="InputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="InputPassword1" placeholder="Confrim Password">
+                          </div>
+                        <button type="submit" class="btn " style="border: 1px solid #fcc100; color: #fff; padding: 6px 24px; background-color: #fcc100;">Sign up</button>
+
+                        <div class="social-media">
+                            <p class="text-center fw-bolder mt-2">or sign up with </p>
+                            <div class="social-icons text-center">
+                                <ul>
+                                  <li class=""><a title="twitter" href="#."  ><i class="fab fa-twitter"></i></a></li>
+                                  <li class=""><a title="facebook" href="#." ><i class="fab fa-facebook-f"></i></a></li>
+                                  <li class=""><a title="instagram" href="#."><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="text-muted text-center">
+                        <div class="my-3">
+                          <div class="text-muted">Already a user? <span><a class="fw-bold lbtn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" style="cursor: pointer;">Login</a></span></div>
+                          
+                        </div>
+                      </form>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <form id="form" class="bg-light px-5 pb-5">
+                <div class="modal-header">
+                  <h3 class="modal-title " id="exampleModalToggleLabel">Login</h3>
+                  <button type="button" class="btn-close" style="color: black;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+  
+                    <div class="form-group my-2">
+                      <label for="InputEmail1">Email address</label>
+                      <input type="email" class="form-control has-validation" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group mb-2">
+                      <label for="InputPassword1">Password</label>
+                      <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                    </div>
+                  
+                    <button type="submit" class="btn " style="border: 1px solid #fcc100; color: #fff; padding: 6px 24px; background-color: #fcc100;">Login</button>
+
+                    <hr class="text-muted text-center">
+                    <div class="my-3">
+                      <div class="text-muted">Don't have an account? <span><a class="fw-bold lbtn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" style="cursor: pointer;">Sign up</a></span></div>
+                      
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
           
             <section id="home">
                 <div id="hometext" class="container">
@@ -243,7 +360,7 @@
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-5 col-sm-12 ">
                             <h2 class="text-white  fw-bold my-3">Write us a<br>review</h2>
-                            <p class="lead text-muted">Got an improvement idea?</p>
+                            <p class="lead">Got an improvement idea?</p>
                         </div>
                         <div class="col-lg-7 col-sm-12 my-4">
                               <form >
@@ -256,7 +373,7 @@
                                         <textarea name="review-message" class="form-control" id="review-content" cols="10" rows="3" placeholder="Your message"></textarea>
                                   </div>
                                   <div class="my-2">
-                                    <button class="sbtn" role="button">Submit</button>
+                                    <button class="sbtn btn btn-dark btn-md py-3 px-5 rounded-right rounded-left" type="submit" role="button">Submit</button>
                                   </div>
                               </form>
                         </div>
@@ -350,12 +467,8 @@
             
         </body>
 
-
          <script src="js/jquery.min.js"></script>
-
-        <script src="js/jquery.min.js"></script>
-
-       <!-- <script src="js/bootstrap.min.js"></script>
+        <!--<script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script> -->
         <script src="./assets/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
         <script src="js/popper.min.js"></script>
