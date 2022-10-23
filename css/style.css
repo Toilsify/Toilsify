@@ -3,19 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,600;1,700&display=swap");
 @font-face {
   font-family: toilsifyfont;
-  src: url(../font/Roboto-Bold.ttf);
+  src: url(../font/Inter-Light.ttf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: toilsifypfont;
-  src: url(../font/Roboto-Medium.ttf);
+  src: url(../font/Inter-Medium.ttf);
   font-weight: bold;
 }
 
 @font-face {
-  font-family: toilsifyppfont;
-  src: url(../font/Roboto-Regular.ttf);
+  font-family: toilsifyhfont;
+  src: url(../font/Inter-ExtraBold.ttf);
   font-weight: bold;
 }
 
@@ -62,45 +62,59 @@ li {
 p {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: toilsifyppfont;
+  font-family: 'inter', sans-serif;
+  line-height: 2.0;
 }
 
+
+/*** LANDING PAGE ***/
+
 #home {
-  background-color: #ffcf34;
+  background-color: #000;
+}
+
+#home i {
+
+  color: #ffcf34;
+}
+
+#home h1 {
+
+  font-family: toilsifyhfont;
+  color: #fff;
+
 }
 
 #hometext {
-  color: #000;
+  color: #fff;
   font-family: toilsifyfont;
   width: 100%;
   height: 100vh;
   display: flex;
 }
 
-
 #hbtn {
-
   border-radius: 10px;
-
-}
-
-#hbtn:hover, 
-.sbtn:hover{
-
-  background-color: #fff;
+  background-color: #ffcf34;
   color: #000;
-  border: 2px solid grey;
-  
+  border: none;
 }
 
-#home p{
-
-font-family: toilsifypfont;
+#hbtn:hover {
+  background-color: #000;
+  color: #ffcf34;
+  border: 2px solid #fff;
 }
+
+#home p {
+  font-family: toilsifypfont;
+}
+
+/*** END OF LANDING PAGE **/
 
 #login-btn {
-  border: 1px solid #fcc100; 
-  color: #fcc100; 
+  border: 1px solid #fcc100;
+  color: #fcc100;
   padding: 6px 24px;
 }
 
@@ -111,37 +125,29 @@ font-family: toilsifypfont;
 }
 
 #abtn {
-
   border-radius: 10px;
   background-color: #ffcf34;
   color: #000;
   border: none;
-
 }
 
-#abtn:hover{
-
+#abtn:hover {
   background-color: #fff;
   color: #000;
   border: 2px solid grey;
-  
 }
 
 #features i {
-
   background-color: #ffcf34;
   border-radius: 50%;
   padding: 4%;
   font-size: 3rem;
-  
 }
 
 #round {
-
   background-color: #ffcf34;
   border-radius: 40px;
   padding: 5%;
-
 }
 
 .up-down-animation {
@@ -151,25 +157,24 @@ font-family: toilsifypfont;
 @-webkit-keyframes up_down {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 
 @keyframes up_down {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
-
 
 .left-right-animation {
   animation: left_right 3s ease-in infinite alternate-reverse;
@@ -178,22 +183,22 @@ font-family: toilsifypfont;
 @-webkit-keyframes left_right {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    transform: translateX(-20px);
   }
 }
 
 @keyframes left_right {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    transform: translateX(-20px);
   }
 }
 
@@ -202,7 +207,8 @@ font-family: toilsifypfont;
   background-color: #fcc100;
   border-radius: 10px;
   margin: 5rem 1.2rem;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .sbtn {
   align-items: center;
@@ -240,7 +246,7 @@ font-family: toilsifypfont;
   transition: 0.3s;
   border-radius: 2px;
 }
-.navs:hover{
+.navs:hover {
   color: #eee;
   background-color: #000;
 }
@@ -260,16 +266,15 @@ font-family: toilsifypfont;
 
 } */
 
-#login-btn:focus, 
+#login-btn:focus,
 #sign-up-btn:focus {
   box-shadow: none;
 }
 
 @media (min-width: 768px) {
-  #review{
+  #review {
     margin: 8rem;
   }
-  
 }
 
 /* form */
@@ -290,85 +295,85 @@ form .social-icons ul li a {
 }
 
 /* footer styling */
-.footer1{
+.footer1 {
   background-color: #555;
 }
-footer .main-footer{
+footer .main-footer {
   padding: 20px 0;
 }
-footer ul{
+footer ul {
   list-style: none;
   padding-left: 0;
 }
-footer ul li a{
+footer ul li a {
   text-decoration: none;
   transition: text-decoration 0.3s;
 }
-footer ul li a:hover{
+footer ul li a:hover {
   text-decoration: underline;
 }
-.widget{
+.widget {
   padding: 20px;
   margin-bottom: 40px;
 }
-.widget.no-box{
+.widget.no-box {
   padding: 0;
   background-color: transparent;
   margin-bottom: 40px;
 }
-.widget.toilsify p{
+.widget.toilsify p {
   margin-bottom: 18px;
 }
-.widget li a{
+.widget li a {
   color: #555;
 }
-.widget p a{
+.widget p a {
   text-decoration: none;
 }
-.widget li a:hover{
+.widget li a:hover {
   color: #000;
 }
-.widget-title{
+.widget-title {
   margin-bottom: 20px;
 }
-.widget-title.main{
+.widget-title.main {
   font-weight: 700;
 }
 
-ul.social-footer2{
+ul.social-footer2 {
   margin-top: 2px;
   padding: 0;
   width: auto;
 }
-ul.social-footer2 li{
+ul.social-footer2 li {
   padding: 0;
 }
-ul.social-footer2 li a i{
+ul.social-footer2 li a i {
   height: 15px;
   width: 15px;
 }
-.widget .thumbnail-widget li a{
+.widget .thumbnail-widget li a {
   color: #271e00;
 }
 
-.footer-copyright{
+.footer-copyright {
   background: rgba(196, 196, 196, 0.3);
   padding: 5px 0;
 }
-.reg{
+.reg {
   background-color: #ffd000;
   color: rgb(54, 54, 54);
   font-weight: 600;
 }
-.reg:hover, 
-.reg:focus, 
+.reg:hover,
+.reg:focus,
 .reg.active {
   background: #4b92dc;
   color: #fff;
-  -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-  -ms-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-  box-shadow:  0 15px 30px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 250ms ease-in-out 0s;
   -moz-transition: all 250ms ease-in-out 0s;
   -ms-transition: all 250ms ease-in-out 0s;
@@ -376,27 +381,23 @@ ul.social-footer2 li a i{
   transition: all 250ms ease-in-out 0s;
 }
 
-
-
 /********** RESPONSIVENESS **********/
 
 /* For 480 Resolution - Laptop*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* STYLES GO HERE */
   #home h1 {
-    font-size: calc(1.375rem + 3.9vw);
-}
-#home p {
-  font-size: 0.8rem
-}
-
+    font-size: calc(1.375rem + 2.9vw);
+  }
+  #home p {
+    font-size: 0.8rem;
+  }
 }
 
 /* For 640 Resolution - mobile */
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-
-  #home p{
-    font-size: 1rem !important;
+  #home p {
+    font-size: 0.83rem !important;
   }
 }
 
@@ -404,12 +405,12 @@ ul.social-footer2 li a i{
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* STYLES GO HERE */
   #home h1 {
-      font-size: calc(1.775rem + 1.9vw) !important;
+    font-size: calc(1.775rem + 1.9vw) !important;
   }
 
   #home p {
     font-size: inherit !important;
-}
+  }
 }
 
 /* For 1366 Resolution  -- laptop 2*/
