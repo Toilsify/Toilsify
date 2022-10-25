@@ -145,6 +145,19 @@ body {
 
 /*** End of About section ****/
 
+
+/****** Accordion Tab *****/
+
+.accordion-item, .accordion-header, .accordion-button {
+
+  background-color: #121212 !important;
+  color: #626262;
+  font-family: toilsifyfont;
+}
+
+
+/***** End of Accordion Tab ****/
+
 #login-btn {
   border: 1px solid #fcc100;
   color: #fcc100;
@@ -172,9 +185,9 @@ body {
 
 
 #round {
-  background-color: #ffcf34;
   border-radius: 40px;
   padding: 5%;
+  color: white;
 }
 
 .up-down-animation {
@@ -426,9 +439,8 @@ ul.social-footer2 li a i {
   }
   
   #round {
-    background-color: #ffcf34;
     border-radius: 20px;
-    padding: 9%;
+    padding: 2%;
   }
 
   #round h1 {
