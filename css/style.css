@@ -81,10 +81,16 @@ body {
 hr {
 
   color: white;
-  width: 50%;
+  width: 100%;
   text-align: center !important;
   align-self: center !important;
   justify-self: center !important;
+}
+
+footer p {
+
+  color: #626262;
+  font-weight: bold;
 }
 
 
