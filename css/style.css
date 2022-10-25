@@ -424,6 +424,16 @@ ul.social-footer2 li a i {
 
     width: 11rem;
   }
+  
+  #round {
+    background-color: #ffcf34;
+    border-radius: 20px;
+    padding: 9%;
+  }
+
+  #round h1 {
+    font-size: calc(1.275rem + 0.5vw);
+  }
 }
 
 /* For 640 Resolution - mobile */
@@ -434,6 +444,11 @@ ul.social-footer2 li a i {
   #play, #web {
 
     width: 10rem;
+  }
+
+  #hometext {
+
+    height: 80vh;
   }
 }
 
