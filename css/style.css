@@ -126,13 +126,24 @@ body {
 
 
 
-/*** Features *********/
+/*** About *********/
 
 .card {
 
-  background-color: transparent;
+  background-color: #121212;
   border: 2px solid #121212;
+  color: white;
 }
+
+#about i {
+  color: #fcc100;
+  border-radius: 80%;
+  padding: 4%;
+  font-size: 4rem;
+}
+
+
+/*** End of About section ****/
 
 #login-btn {
   border: 1px solid #fcc100;
@@ -159,12 +170,6 @@ body {
   border: 2px solid grey;
 }
 
-#features i {
-  background-color: #ffcf34;
-  border-radius: 50%;
-  padding: 4%;
-  font-size: 3rem;
-}
 
 #round {
   background-color: #ffcf34;
