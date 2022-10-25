@@ -67,14 +67,14 @@ p {
   line-height: 2.0;
 }
 
+body {
 
-/*** LANDING PAGE ***/
-
-#home {
   background-color: #000;
   background-image: url("../img/toil2.png");
 }
 
+
+/*** LANDING PAGE ***/
 #home i {
 
   color: #ffcf34;
