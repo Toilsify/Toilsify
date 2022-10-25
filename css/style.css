@@ -78,6 +78,15 @@ body {
   background-image: url("../img/toil2.png");
 }
 
+hr {
+
+  color: white;
+  width: 50%;
+  text-align: center !important;
+  align-self: center !important;
+  justify-self: center !important;
+}
+
 
 /*** LANDING PAGE ***/
 #home i {
