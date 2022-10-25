@@ -67,6 +67,11 @@ p {
   line-height: 2.0;
 }
 
+h1 {
+
+  font-family: toilsifyhfont !important;
+}
+
 body {
 
   background-color: #000;
@@ -95,6 +100,11 @@ body {
   display: flex;
 }
 
+#play, #web {
+
+  width: 13rem;
+}
+
 #hbtn {
   border-radius: 10px;
   background-color: #ffcf34;
@@ -113,6 +123,16 @@ body {
 }
 
 /*** END OF LANDING PAGE **/
+
+
+
+/*** Features *********/
+
+.card {
+
+  background-color: transparent;
+  border: 2px solid #121212;
+}
 
 #login-btn {
   border: 1px solid #fcc100;
@@ -394,12 +414,21 @@ ul.social-footer2 li a i {
   #home p {
     font-size: 0.8rem;
   }
+
+  #play, #web {
+
+    width: 11rem;
+  }
 }
 
 /* For 640 Resolution - mobile */
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
   #home p {
     font-size: 0.83rem !important;
+  }
+  #play, #web {
+
+    width: 11rem;
   }
 }
 
@@ -412,6 +441,10 @@ ul.social-footer2 li a i {
 
   #home p {
     font-size: inherit !important;
+  }
+  #play, #web {
+
+    width: 11rem;
   }
 }
 
