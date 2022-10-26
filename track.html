@@ -159,6 +159,11 @@
         <script src="js/scrollcat.js"></script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-       
-  
+        <script>
+            if (typeof navigator.serviceWorker !== 'undefined') {
+              navigator.serviceWorker.register('sw.js')
+            }
+          </script>
+
+        <script>navigator.serviceWorker.register("sw.js")</script> 
 </html>
