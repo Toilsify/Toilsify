@@ -1,6 +1,6 @@
 [{
         "relation": ["delegate_permission/common.handle_all_urls"],
         "target" : { "namespace": "android_app", "package_name": "ng.com.toilsify.twa",
-                     "sha256_cert_fingerprints": ["3B:D4:A5:E7:23:E3:98:7C:7C:CC:E2:25:E1:42:C7:0D:ED:E8:C9:C6:8F:45:F3:4B:5F:28:BD:8F:9C:5F:A1:70"] }
+                     "sha256_cert_fingerprints": ["13:24:EC:49:81:A1:9F:93:C8:21:7C:86:37:A4:07:D4:51:67:70:B1:A4:E2:E8:2D:BD:DA:9F:06:B1:5D:08:83"] }
       }
 ]
