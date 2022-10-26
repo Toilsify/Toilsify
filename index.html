@@ -70,7 +70,7 @@
 
     </head>
 
-        <body onload="hidetrack()">
+        <body>
 
         
          <!-- navbar -->
@@ -274,7 +274,7 @@
 
 
             <!-- review sect -->
-            <section class="p-2 col-10 m-auto" id="review">
+            <section class="p-2 col-10 m-auto pt-5" id="review">
               <div class="container">
                   
                 <div class="justify-content-center m-auto">
@@ -297,7 +297,7 @@
 
 
               <!--- Tracker Interface  -->
-              <section id="tracktoilet" class="pt-5 mt-5">
+              <section style="display: none;" id="tracktoilet" class="pt-5 mt-5">
                 <div class="container">
   
                   <div class="col-12 col-lg-8 col-md- col-xs-8 justify-content-center text-center m-auto">
@@ -389,14 +389,12 @@
             document.getElementById("community").style.display = "none";
             document.getElementById("faq").style.display = "none";
             document.getElementById("review").style.display = "none";
+
+            document.getElementById("tracktoilet").style.display = "block";
             
           }
 
-          function hidetrack() {
-
-            document.getElementById("tracktoilet").style.display = "none";
-
-          }
+         
         </script>
   
 </html>
