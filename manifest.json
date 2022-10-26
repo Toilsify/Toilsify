@@ -6,23 +6,23 @@
     "params": {
       "title": "Toilsify",
       "text": "Find public toilet around you",
-      "url": "./?v3&amp;utm_source=web_app_manifest"
+      "url": "./?v3&amp;amp;utm_source=web_app_manifest"
     }
   },
   "short_name": "Toilsify",
-  "start_url": "./?v3&amp;utm_source=web_app_manifest",
+  "start_url": "./?v3&amp;amp;utm_source=web_app_manifest",
   "display_override": [
     "fullscreen",
     "minimal-ui"
   ],
   "display": "standalone",
   "description": "Find public toilet around you",
-  "lang": "EN-US",
+  "lang": "en",
   "dir": "auto",
   "theme_color": "#fba81c",
   "background_color": "#000",
   "orientation": "portrait",
-  "scope": "./?v3&amp;utm_source=web_app_manifest",
+  "scope": "./?v3&amp;amp;utm_source=web_app_manifest",
   "categories": [
     "business",
     "travel",
@@ -594,18 +594,18 @@
   "related_applications": [
     {
       "platform": "windows",
-      "url": "./?v3&amp;utm_source=web_app_manifest"
+      "url": "./?v3&amp;amp;utm_source=web_app_manifest"
     },
     {
       "platform": "play",
-      "url": "./?v3&amp;utm_source=web_app_manifest"
+      "url": "./?v3&amp;amp;utm_source=web_app_manifest"
     }
   ],
   "prefer_related_applications": false,
   "shortcuts": [
     {
       "name": "Toilsify",
-      "url": "./?v3&amp;utm_source=web_app_manifest",
+      "url": "./?v3&amp;amp;utm_source=web_app_manifest",
       "description": "Find public toilet around you"
     }
   ],
