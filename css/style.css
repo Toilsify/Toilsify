@@ -67,37 +67,51 @@ p {
   line-height: 2.0;
 }
 
+
 h1 {
 
   font-family: toilsifyhfont !important;
 }
 
+
 body {
 
   background-color: #000;
   background-image: url("../img/toil2.png");
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
 
 hr {
 
   color: white;
-  width: 100%;
   text-align: center !important;
   align-self: center !important;
   justify-self: center !important;
 }
 
-footer p {
 
+footer p {
   color: #626262;
   font-weight: bold;
+}
+
+.navbar {
+
+  background-color: #121212 !important;
+  color: #fff !important;
+  position: fixed !important;
+  width: 100%;
+  z-index: 9999;
 }
 
 
 /*** LANDING PAGE ***/
 #home i {
 
-  color: #ffcf34;
+  color: #fba81c;
 }
 
 #home h1 {
@@ -122,14 +136,14 @@ footer p {
 
 #hbtn {
   border-radius: 10px;
-  background-color: #ffcf34;
+  background-color: #fba81c;
   color: #000;
   border: none;
 }
 
 #hbtn:hover {
   background-color: #000;
-  color: #ffcf34;
+  color: #fba81c;
   border: 2px solid #fff;
 }
 
@@ -151,7 +165,7 @@ footer p {
 }
 
 #about i {
-  color: #fcc100;
+  color: #fba81c;
   border-radius: 80%;
   padding: 4%;
   font-size: 4rem;
@@ -159,6 +173,7 @@ footer p {
 
 
 /*** End of About section ****/
+
 
 
 /****** Accordion Tab *****/
@@ -174,20 +189,20 @@ footer p {
 /***** End of Accordion Tab ****/
 
 #login-btn {
-  border: 1px solid #fcc100;
-  color: #fcc100;
+  border: 1px solid #fba81c;
+  color: #fba81c;
   padding: 6px 24px;
 }
 
 #login-btn:hover {
-  background-color: #ffcf34;
+  background-color: #fba81c;
   color: #fff;
-  border: 1px solid #fcc100;
+  border: 1px solid #fba81c;
 }
 
 #abtn {
   border-radius: 10px;
-  background-color: #ffcf34;
+  background-color: #fba81c;
   color: #000;
   border: none;
 }
@@ -205,9 +220,21 @@ footer p {
   color: white;
 }
 
+
+#review {
+  background-color: #fba81c;
+  border-radius: 10px;
+  margin: 5rem 1.2rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/**** CSS ANIMATIONS *****/
+
 .up-down-animation {
   animation: up_down 3s ease-in infinite alternate-reverse;
 }
+
 
 @-webkit-keyframes up_down {
   0% {
@@ -220,6 +247,7 @@ footer p {
   }
 }
 
+
 @keyframes up_down {
   0% {
     -webkit-transform: translateY(0);
@@ -231,9 +259,11 @@ footer p {
   }
 }
 
+
 .left-right-animation {
   animation: left_right 3s ease-in infinite alternate-reverse;
 }
+
 
 @-webkit-keyframes left_right {
   0% {
@@ -257,184 +287,18 @@ footer p {
   }
 }
 
-/* send a review */
-#review {
-  background-color: #fcc100;
-  border-radius: 10px;
-  margin: 5rem 1.2rem;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-.sbtn {
-  align-items: center;
-  /* background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.85); */
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  min-height: 1rem;
-  padding: 10px 24px;
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-}
-
-.sbtn:hover {
-  transform: translateY(-1px);
-}
-
-.navs {
-  color: #000;
-  transition: 0.3s;
-  border-radius: 2px;
-}
-.navs:hover {
-  color: #eee;
-  background-color: #000;
-}
-.nav-btn {
-  outline: none;
-  border: 0;
-}
-
-.sbtn:active {
-  background-color: #ffffff;
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(0);
-}
-/* .lbnt:{
-
-} */
-
-#login-btn:focus,
-#sign-up-btn:focus {
-  box-shadow: none;
-}
-
-@media (min-width: 768px) {
-  #review {
-    margin: 8rem;
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
   }
+  100% {
+      opacity: 1;
+   }
 }
 
-/* form */
-#form {
-  margin: 0 6px;
-  border-radius: 5px;
-}
 
-form .social-icons ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-form .social-icons ul li a {
-  font-size: 30px;
-  color: #fcc100;
-}
+/***** End of Animations ****/
 
-/* footer styling */
-.footer1 {
-  background-color: #555;
-}
-footer .main-footer {
-  padding: 20px 0;
-}
-footer ul {
-  list-style: none;
-  padding-left: 0;
-}
-footer ul li a {
-  text-decoration: none;
-  transition: text-decoration 0.3s;
-}
-footer ul li a:hover {
-  text-decoration: underline;
-}
-.widget {
-  padding: 20px;
-  margin-bottom: 40px;
-}
-.widget.no-box {
-  padding: 0;
-  background-color: transparent;
-  margin-bottom: 40px;
-}
-.widget.toilsify p {
-  margin-bottom: 18px;
-}
-.widget li a {
-  color: #555;
-}
-.widget p a {
-  text-decoration: none;
-}
-.widget li a:hover {
-  color: #000;
-}
-.widget-title {
-  margin-bottom: 20px;
-}
-.widget-title.main {
-  font-weight: 700;
-}
-
-ul.social-footer2 {
-  margin-top: 2px;
-  padding: 0;
-  width: auto;
-}
-ul.social-footer2 li {
-  padding: 0;
-}
-ul.social-footer2 li a i {
-  height: 15px;
-  width: 15px;
-}
-.widget .thumbnail-widget li a {
-  color: #271e00;
-}
-
-.footer-copyright {
-  background: rgba(196, 196, 196, 0.3);
-  padding: 5px 0;
-}
-.reg {
-  background-color: #ffd000;
-  color: rgb(54, 54, 54);
-  font-weight: 600;
-}
-.reg:hover,
-.reg:focus,
-.reg.active {
-  background: #4b92dc;
-  color: #fff;
-  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 250ms ease-in-out 0s;
-  -moz-transition: all 250ms ease-in-out 0s;
-  -ms-transition: all 250ms ease-in-out 0s;
-  -o-transition: all 250ms ease-in-out 0s;
-  transition: all 250ms ease-in-out 0s;
-}
 
 /********** RESPONSIVENESS **********/
 
@@ -470,7 +334,7 @@ ul.social-footer2 li a i {
   }
   #play, #web {
 
-    width: 10rem;
+    width: 11rem;
   }
 
   #hometext {

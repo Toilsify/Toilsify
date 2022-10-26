@@ -41,7 +41,7 @@
         <meta name="description" content="Use public toilets with confidence and no embarrassment. Find public toilets near you with Toilsify " />
         <meta name="keywords" content="Toilet, Public Toilet, Toilets near me, Available Toilets, Clean Toilets, Toilsify, Tracker " />
         <meta property="og:title" content="Use public toilets with confidence and no embarrassment. Find public toilets near you with Toilsify " />
-        <meta name="theme-color" content="#ffcf34" />
+        <meta name="theme-color" content="#fba81c" />
     
     
         <!-- ===============================================-->
@@ -53,6 +53,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
         <link rel="canonical" href="/web/tweet-button">
         <link rel="me"href="https://twitter.com/toilsify">
+        <link rel="stylesheet" href="css/catto.css"/>
         <meta name="msapplication-TileImage" content="img/logo.png" />
 
     
@@ -73,6 +74,21 @@
         <body>
 
         
+         <!-- navbar -->
+         <nav class="navbar p-3 mb-5">
+          <div class="row col-12 justify-content-center text-center ">
+
+          
+            <div class="col-6 justify-content-center text-center align-center">
+               <img src="img/Toilsify Branding SVG_Orange logo.svg" class="img-fluid" width="45"><a class="text-white fw-bold text-decoration-none">Toilsify </a>
+            </div>
+
+            <div class="col-6 mt-2 mb-2">
+                <a class="text-white text-decoration-none">Get Started</a>
+            </div>
+          
+          </div>
+      </nav>
 
           
             <section id="home">
@@ -90,8 +106,8 @@
                      
                       
                         <div class="row justify-content-center text-center">
-                          <img src="img/web.png" id="web">
-                          <img src="img/google-play-61cb4b62e2b04e3c1c5e6908b4cc7f6a.svg" id="play">
+                          <img class="a-slideFadeLeft" src="img/web.png" id="web">
+                          <img class="a-slideFadeRight" src="img/google-play-61cb4b62e2b04e3c1c5e6908b4cc7f6a.svg" id="play">
                         </div>
 
                     </div>
@@ -171,7 +187,7 @@
                   <!-- accordion -->
                   <div class="accordion" id="accordionExample">
 
-                    <div class="col-9 m-auto justify-content-center">
+                    <div class="col-11 col-lg-9 m-auto justify-content-center">
                       <div class="accordion-item my-3">
                         <h2 class="accordion-header" id="headingOne">
                           <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -191,7 +207,7 @@
                       </div>
                     </div>
                     
-                    <div class="col-9 m-auto justify-content-center">
+                    <div class="col-11 col-lg-9 m-auto justify-content-center">
                       <div class="accordion-item my-3">
                         <h2 class="accordion-header" id="headingOne">
                           <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -211,7 +227,7 @@
                       </div>
                     </div>
 
-                    <div class="col-9 m-auto justify-content-center">
+                    <div class="col-11 col-lg-9 m-auto justify-content-center">
                       <div class="accordion-item my-3">
                         <h2 class="accordion-header" id="headingOne">
                           <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -231,7 +247,7 @@
                       </div>
                     </div>
 
-                    <div class="col-9 m-auto justify-content-center">
+                    <div class="col-11 col-lg-9 m-auto justify-content-center">
                       <div class="accordion-item my-3">
                         <h2 class="accordion-header" id="headingOne">
                           <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -258,14 +274,17 @@
 
 
             <!-- review sect -->
-            <section class="p-2" id="review">
+            <section class="p-2 col-10 m-auto" id="review">
               <div class="container">
                   
                 <div class="justify-content-center m-auto">
 
                   <div class="col-12 text-center mb-3">
-                    <h1 class="mb-3 mt-4">What have we got to say today 💩 </h1>
-                      <a class="twitter-timeline" href="https://twitter.com/thegrtnx?ref_src=twsrc%5Etfw"  data-tweet-limit="1" data-chrome="nofooter noborders" data-chrome="transparent">Latest Gist from us...</a>
+                    <h1 class="mb-3 col-12 col-lg-6 m-auto mt-4 mb-3">What have we got to say today... 💩 </h1>
+                    <div class="col-12 col-lg-6 m-auto mt-4">
+                      <a class="twitter-timeline m-auto" href="https://twitter.com/toilsify?ref_src=twsrc%5Etfw"  data-tweet-limit="1" data-chrome="nofooter noborders" data-chrome="transparent">Latest Gist from us...</a>
+                    </div>
+                     
                     </div>
 
                  
@@ -289,16 +308,16 @@
                 <div class="row justify-content-center text-center align-center">
                   
                   <div class="col-4">
-                    <p>Email</p>
+                    <a>Email</a>
                   </div>
                  
                   <div class="col-4">
-                    <p>Product Hunt</p>
+                    <a>Product Hunt</a>
                   </div>
                  
 
                   <div class="col-4">
-                    <p>Twitter</p>
+                    <a>Twitter</a>
                   </div>
                  
                  
@@ -318,6 +337,8 @@
         <script src="js/popper.min.js"></script>
         <script src="js/aos.js"></script>
         <script src="js/fontawesome.min.js"></script> 
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/scrollcat.js"></script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   
 </html>
