@@ -6,11 +6,11 @@
     "params": {
       "title": "Toilsify",
       "text": "Find public toilet around you",
-      "url": "./?v3&amp;amp;utm_source=web_app_manifest"
+      "url": "./?v3&amp;amp;amp;utm_source=web_app_manifest"
     }
   },
   "short_name": "Toilsify",
-  "start_url": "./?v3&amp;amp;utm_source=web_app_manifest",
+  "start_url": "https://toilsify.com.ng/track",
   "display_override": [
     "fullscreen",
     "minimal-ui"
@@ -22,7 +22,7 @@
   "theme_color": "#fba81c",
   "background_color": "#000",
   "orientation": "portrait",
-  "scope": "./?v3&amp;amp;utm_source=web_app_manifest",
+  "scope": "https://toilsify.com.ng/track",
   "categories": [
     "business",
     "travel",
@@ -594,18 +594,20 @@
   "related_applications": [
     {
       "platform": "windows",
-      "url": "./?v3&amp;amp;utm_source=web_app_manifest"
+      "url": "https://toilsify.com.ng/track",
+      "id": ""
     },
     {
       "platform": "play",
-      "url": "./?v3&amp;amp;utm_source=web_app_manifest"
+      "url": "https://toilsify.com.ng/track",
+      "id": ""
     }
   ],
   "prefer_related_applications": false,
   "shortcuts": [
     {
       "name": "Toilsify",
-      "url": "./?v3&amp;amp;utm_source=web_app_manifest",
+      "url": "https://toilsify.com.ng/track",
       "description": "Find public toilet around you"
     }
   ],
