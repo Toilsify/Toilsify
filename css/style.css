@@ -100,7 +100,7 @@ footer p {
 
 .navbar {
 
-  background-color: #121212 !important;
+  background-color: #000 !important;
   color: #fff !important;
   position: fixed !important;
   width: 100%;
@@ -151,6 +151,11 @@ footer p {
   font-family: toilsifypfont;
 }
 
+#home img {
+
+  cursor: pointer;
+}
+
 /*** END OF LANDING PAGE **/
 
 
@@ -171,6 +176,19 @@ footer p {
   font-size: 4rem;
 }
 
+
+#tracktoilet i {
+  color: #fba81c;
+  border-radius: 80%;
+  padding: 4%;
+  font-size: 4rem;
+}
+
+
+#tracktoilet .card {
+
+  cursor: pointer;
+}
 
 /*** End of About section ****/
 
