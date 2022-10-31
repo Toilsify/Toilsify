@@ -1,141 +1,30 @@
+<!DOCTYPE html>
 <html>
-    <style>
-        /* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
-#map {
-  height: 100%;
-}
-/* Optional: Makes the sample page fill the window. */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-    </style>
-    <div id="map"></div>
-<!-- Replace the value of the key parameter with your own API key. -->
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initMap">
-</script>
+<body>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
 <script>
-    // Note: This example requires that you consent to location sharing when
-// prompted by your browser. If you see the error "The Geolocation service
-// failed.", it means you probably did not give permission for the browser to
-// locate you.
-var map, infoWindow, service;
+var x = document.getElementById("demo");
 
-function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: {
-            lat: -34.397,
-            lng: 150.644
-        },
-        zoom: 14
-    });
-    infoWindow = new google.maps.InfoWindow;
-
-    // Try HTML5 geolocation.
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-            };
-
-
-            map.setCenter(pos);
-            //Put marker of the Geolocated user location
-            var userMarker = new google.maps.Marker({
-                map: map,
-                position: pos
-            });
-
-            google.maps.event.addListener(userMarker, 'click', function() {
-                infoWindow.setContent('Your location');
-                infoWindow.open(map, this);
-            });
-
-            //Put request in here there are 3 requests since nearbysearch only has one type to be specified
-            var requestHosp = {
-                location: pos,
-                radius: '8000',
-                type: ['hospital']
-            };
-            var requestAtm = {
-                location: pos,
-                radius: '8000',
-                type: ['atm']
-            };
-            var requestPolice = {
-                location: pos,
-                radius: '8000',
-                type: ['police']
-            };
-
-						//Make Places Service requests here
-            service = new google.maps.places.PlacesService(map);
-            service.nearbySearch(requestHosp, callback);
-            service.nearbySearch(requestAtm, callback);
-            service.nearbySearch(requestPolice, callback);
-
-        }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-        });
-    } else {
-        // Browser doesn't support Geolocation
-        handleLocationError(false, infoWindow, map.getCenter());
-    }
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
 }
-
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ?
-        'Error: The Geolocation service failed.' :
-        'Error: Your browser doesn\'t support geolocation.');
-    infoWindow.open(map);
-}
-
-function callback(results, status) {
-    if (status == google.maps.places.PlacesServiceStatus.OK) {
-        for (var i = 0; i < results.length; i++) {
-            var place = results[i];
-            createMarker(results[i]);
-        }
-    }
-}
-
-function createMarker(place) {
-    var type = place.types;
-    var iconStyle;
-    for (var i = 0; i < type.length; i++) {
-        //put array of Place types in placeType variable
-        var placeType = type[i];
-        
-        //Check the placeType and set the icon according to the placeType value
-        switch (placeType) {
-            case "hospital":
-                iconStyle = "http://maps.google.com/mapfiles/kml/shapes/pharmacy_rx.png"
-                break;
-            case "atm":
-                iconStyle = "http://maps.google.com/mapfiles/kml/shapes/dollar.png";
-                break;
-            case "police":
-                iconStyle = "http://maps.google.com/mapfiles/kml/shapes/police.png"
-                break;
-        }
-    }
-
-//put marker of the places in the map
-    var marker = new google.maps.Marker({
-        map: map,
-        icon: iconStyle,
-        position: place.geometry.location
-    });
-
-    google.maps.event.addListener(marker, 'click', function() {
-        infoWindow.setContent(place.name);
-        infoWindow.open(map, this);
-    });
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
 }
 </script>
+
+</body>
 </html>
+
