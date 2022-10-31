@@ -22,9 +22,13 @@ function getLocation() {
 function showPosition(position) {
     x.innerHTML="Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
+
+    setTimeout(function(){
+     window.location.href = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+ position.coords.latitude + ','+ position.coords.longitude +'&radius=500&types=hospital&name=cruise&key=AIzaSyDpVEUtSIONRtxXjZvUj2NwL0OVni63_fU';
+  }, 5000);
 }
 </script>
-
+<p>Web page redirects after 5 seconds.</p>
 </body>
 </html>
 
